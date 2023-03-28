@@ -2,11 +2,6 @@
 import { useData, withBase } from 'vitepress'
 import { ref } from 'vue'
 
-interface post {
-  regularPath: string
-  frontMatter: object
-}
-
 const { theme } = useData()
 const allPosts = theme.value.posts || []
 const pageSize = theme.value.pageSize
@@ -44,7 +39,13 @@ const go = (i: number) => {
       </a>
     </div>
     <div class="pagination">
-      <div class="link" :class="{ activeLink: currentPage === i }" v-for="i in pageNum" :key="i" @click="go(i)">
+      <div
+        class="link"
+        :class="{ activeLink: currentPage === i }"
+        v-for="i in pageNum"
+        :key="i"
+        @click="go(i)"
+      >
         {{ i }}
       </div>
     </div>

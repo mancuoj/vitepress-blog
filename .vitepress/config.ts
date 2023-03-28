@@ -11,11 +11,9 @@ async function config() {
       pageSize: 7,
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Tag', link: '/tag' },
-        { text: 'Archive', link: '/archive' }
       ],
       socialLinks: [{ icon: 'github', link: 'https://github.com/mancuoj' }],
-      aside: false,
+      aside: false
     }
   }
 }
