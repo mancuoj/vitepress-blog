@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@types/node": "^18.15.10",
-    "globby": "11.0.4",
+    "globby": "^11",
     "gray-matter": "^4.0.3",
     "vitepress": "1.0.0-alpha.63",
     "vue": "^3.2.47"

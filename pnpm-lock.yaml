@@ -5,8 +5,8 @@ devDependencies:
     specifier: ^18.15.10
     version: 18.15.10
   globby:
-    specifier: 11.0.4
-    version: 11.0.4
+    specifier: ^11
+    version: 11.0.0
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
@@ -691,8 +691,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /globby@11.0.4:
-    resolution: {integrity: sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==}
+  /globby@11.0.0:
+    resolution: {integrity: sha512-iuehFnR3xu5wBBtm4xi0dMe92Ob87ufyu/dHwpDYfbcpYpIbrO5OnS8M1vWvrBhSGEJ3/Ecj7gnX76P8YxpPEg==}
     engines: {node: '>=10'}
     dependencies:
       array-union: 2.1.0

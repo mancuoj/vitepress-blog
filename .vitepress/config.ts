@@ -8,7 +8,7 @@ async function config() {
     cleanUrls: true,
     themeConfig: {
       posts: await getPosts(),
-      pageSize: 7,
+      pageSize: 6,
       nav: [
         { text: 'Home', link: '/' },
       ],
