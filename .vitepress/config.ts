@@ -1,16 +1,23 @@
-import { defineConfig } from 'vitepress'
+import { getPosts } from './theme/utils'
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: 'Mancuoj',
-  description: 'A VitePress Blog',
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    socialLinks: [{ icon: 'github', link: 'https://github.com/mancuoj' }]
+async function config() {
+  return {
+    title: 'Mancuoj',
+    titleTemplate: 'Blog',
+    description: 'A VitePress Blog',
+    cleanUrls: true,
+    themeConfig: {
+      posts: await getPosts(),
+      pageSize: 7,
+      nav: [
+        { text: 'Home', link: '/' },
+        { text: 'Tag', link: '/tag' },
+        { text: 'Archive', link: '/archive' }
+      ],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/mancuoj' }],
+      aside: false,
+    }
   }
-})
+}
+
+export default config()
