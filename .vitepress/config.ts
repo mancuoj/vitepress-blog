@@ -22,7 +22,7 @@ async function config() {
       posts: await getPosts(),
       pageSize: 6,
       aside: false,
-      nav: [{ text: 'Home', link: '/' }],
+      // nav: [{ text: 'Home', link: '/' }],
       socialLinks: [{ icon: 'github', link: 'https://github.com/mancuoj' }],
       lastUpdatedText: '上次更新时间',
       editLink: {
