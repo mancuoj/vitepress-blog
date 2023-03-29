@@ -1,17 +1,15 @@
 <script lang="ts" setup>
 import Giscus from '@giscus/vue'
-import { useData, useRoute } from 'vitepress'
+import { useData } from 'vitepress'
 import { computed } from 'vue'
 
 const { isDark } = useData()
-const route = useRoute()
-const theme = computed(() => (isDark.value ? 'transparent_dark' : 'light_tritanopia'))
+const theme = computed(() => (isDark.value ? 'dark_tritanopia' : 'light_tritanopia'))
 </script>
 
 <template>
   <div id="giscus">
     <Giscus
-      :term="route.path"
       id="comments"
       repo="mancuoj/vitepress-blog"
       repoId="R_kgDOJPXGYg"
