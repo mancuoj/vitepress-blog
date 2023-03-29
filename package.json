@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@giscus/vue": "^2.2.8",
     "@types/node": "^18.15.10",
     "globby": "^11",
     "gray-matter": "^4.0.3",
