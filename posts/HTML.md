@@ -14,6 +14,8 @@ date: 2023-03-29
 - https://github.com/pwstrick/daily/blob/master/interview/html.md
 :::
 
+[[toc]]
+
 ## 语义化
 
 > According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."
@@ -55,7 +57,7 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
 - 使用语义化的 HTML 代码
 - 优化页面加载速度，响应式设计
 - 确保为您的视觉内容附加文字形式的说明，图片的 alt 属性
-- [构建并提交站点地图](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=zh-cn)。
+- [构建并提交站点地图](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=zh-cn)
 - ...
 
 
@@ -164,3 +166,23 @@ DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪�
 
 - src：它通常用于 `img、video、audio、script` 等元素，通过 src 指向请求外部资源的来源地址，指向的内容会嵌入到文档中当前标签所在位置，在请求资源时，它会将资源下载并应用到文档内。当浏览器解析到该元素时，会暂停其它资源下载，直到将该资源加载、编译、执行完毕
 - href：hyper reference，意味着超链接，指向网络资源，当浏览器识别到它指向的⽂件时，就会并⾏下载资源，不会停⽌对当前⽂档的处理，通常用于 `a、link` 元素
+
+
+## iframe
+
+iframe 也称作嵌入式框架，能够将另一个 HTML 页面嵌入到当前页面中
+
+优点：
+
+- 能原封不动的展示嵌入的网站
+- 如果有多处引用，则修改一处的内容即可，代码可重用，方便快捷
+- 遇到加载缓慢的第三方内容（如图标和广告），可以使用 iframe 处理
+
+
+缺点：
+
+- 不利于 SEO，爬虫程序无法解读
+- iframe 会阻塞页面加载，影响网页加载速度，在它加载完毕后才会触发 `window.onload` 事件，可以动态设置 src 来解决这个问题
+- 有时 iframe 由于页面挤占空间的原因会出现滚动条，造成布局混乱
+- iframe 与主页面是共享链接池的，若 iframe 加载时用光了链接池，则会造成主页面加载阻塞
+- 有些小型的移动设备如手机等无法完全显示框架，兼容性较差
