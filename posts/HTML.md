@@ -49,7 +49,7 @@ HTML 语义化其实就是指我们应该用合适的标签来划分网页的结
 
 ## SEO
 
-SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过优化网站的内容、结构和功能以使其获得更高的搜索引擎排名的技术和策略
+SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过优化网站的内容、结构和功能以使其获得更高的搜索引擎排名的技术和策略。
 
 前端需要注意的部分：
 
@@ -63,7 +63,7 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
 
 ## meta 标签
 
-在 head 标签中对页面进行描述的功能性标签，常常使用 name 和 content 以“名-值”对的方式给文档提供元数据
+在 head 标签中对页面进行描述的功能性标签，常常使用 name 和 content 以“名-值”对的方式给文档提供元数据。
 
 一些常用的 meta 标签：
 
@@ -87,19 +87,19 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
 </head>
 ```
 
-其中 `og:xx` 和 `twitter:xx` 都是社交媒体的元标签，用于分享到社交媒体时的展示
+其中 `og:xx` 和 `twitter:xx` 都是社交媒体的元标签，用于分享到社交媒体时的展示。
 
 ## viewport
 
-移动端浏览器通常都会在一个比移动端屏幕更宽的虚拟视口（也就是 viewport）中渲染页面，目的是将没有做移动端适配的网页正常展示给用户
+移动端浏览器通常都会在一个比移动端屏幕更宽的虚拟视口（也就是 viewport）中渲染页面，目的是将没有做移动端适配的网页正常展示给用户。
 
-通俗理解就是让原本可能只能装下 300px 宽度的手机屏幕装下 1000px 宽度的网页内容（将网页同比缩小）
+通俗理解就是让原本可能只能装下 300px 宽度的手机屏幕装下 1000px 宽度的网页内容（将网页同比缩小）。
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-`device-width` 就是 100vw，即 100% 的视口高度，`initial-scale` 用于控制页面首次加载时显示的缩放倍数
+`device-width` 就是 100vw，即 100% 的视口高度，`initial-scale` 用于控制页面首次加载时显示的缩放倍数。
 
 ## HTML5 的新特性
 
@@ -116,9 +116,9 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
 
 ## DOCTYPE 的作用
 
-DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪一个 HTML 版本标准解析文档
+DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪一个 HTML 版本标准解析文档。
 
-如果没有 DOCTYPE，浏览器就不知道文档解析的标准是什么，会导致 HTML 文档以怪异模式呈现（不仅会降低解析效率，而且会在解析过程中产生一些难以预知的 bug）
+如果没有 DOCTYPE，浏览器就不知道文档解析的标准是什么，会导致 HTML 文档以怪异模式呈现（不仅会降低解析效率，而且会在解析过程中产生一些难以预知的 bug）。
 
 
 ## 标准模式和怪异模式
@@ -129,12 +129,13 @@ DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪�
 
 ## 块级元素和行内元素
 
-> 可以用 display 互相转换
+> 可以用 display 互相转换，具体可以查看 CSS 的盒模型 👀
 
 块级元素（block element）：
 
 - 总是在新行上开始，就是每个块级元素独占一行，默认从上到下排列
 - 不设置 width 时，宽度就是容器的宽度
+- width 和 height 属性可以发挥作用 
 - 块级元素可以容纳其它行级元素和块级元素
 - `div, p, form, ul, ol, li, h1~h6, dl, hr`
 
@@ -143,8 +144,8 @@ DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪�
 - 和其它元素都会在一行显示
 - width 就是文字或者图片的宽度，不能改变
 - 行级元素只能容纳文本或者其它行内元素
-- 设置 height 也是无效的，但可以使用 `line-height` 属性调整
-- padding 和 margin 可以设置上下左右，但是不会改变元素本身的大小
+- width 和 height 属性将不起作用，但可以使用 `line-height` 属性调整
+- 所有方向的 padding 和 margin 都会被应用，但垂直方向不会把其他行内元素推开，水平方向会
 - `span, a, img, button, input, label, select, textarea`
 
 
@@ -170,7 +171,7 @@ DOCTYPE 是 HTML5 的文档声明，通过它可以告诉浏览器，使用哪�
 
 ## iframe
 
-iframe 也称作嵌入式框架，能够将另一个 HTML 页面嵌入到当前页面中
+iframe 也称作嵌入式框架，能够将另一个 HTML 页面嵌入到当前页面中。
 
 优点：
 
