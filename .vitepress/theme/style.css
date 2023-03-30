@@ -1,5 +1,5 @@
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.7.0/style.min.css');
-/* @import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css'); */
+/* @import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.7.0/style.min.css'); */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css');
 
 @font-face {
   font-family: 'Hubot Sans';
@@ -111,7 +111,7 @@
   --vp-code-font-size: 0.92em;
 
   --vp-code-block-color: rgb(15, 15, 15);
-  --vp-code-block-bg: rgb(245, 245, 245);
+  --vp-code-block-bg: rgb(246, 246, 246);
 
   --vp-code-line-highlight-color: rgba(232, 252, 243, 0.5);
   --vp-code-line-number-color: rgb(33, 33, 33);
@@ -121,6 +121,10 @@
   --vp-code-tab-hover-text-color: var(--vp-c-text-light-1);
   --vp-code-tab-active-text-color: var(--vp-c-text-light-1);
   --vp-code-tab-active-bar-color: var(--vp-c-brand);
+  
+  --vp-code-copy-code-bg: rgb(255, 255, 255);
+  --vp-code-copy-code-hover-bg: rgb(239, 239, 239);
+  --vp-code-copy-code-active-text: var(--vp-c-text-light-1);
 }
 
 .dark {
@@ -136,6 +140,13 @@
   --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
   --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
   --vp-code-tab-active-bar-color: var(--vp-c-brand);
+
+ 
+  --vp-code-copy-code-border-color: transparent;
+  --vp-code-copy-code-bg: var(--vp-code-block-bg-light);
+  --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
+  --vp-code-copy-code-hover-bg: var(--vp-code-block-bg-light);
+  --vp-code-copy-code-active-text: var(--vp-c-text-dark-2);
 }
 
 /********************************************************
