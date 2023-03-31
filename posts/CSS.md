@@ -128,7 +128,7 @@ BFC 即 Block Formatting Context，块级格式化上下文，其实就是页面
 
 伪类：
 
-- `:root, :empty`
+- `:root, :empty, :checked, :disabled`
 - `:first-child, :last-child, :nth-child(), :nth-last-child()`
 - `:is(), :not(), :where(), :has()`
 - ...
@@ -146,12 +146,15 @@ CSS 声明的权重，它由匹配的选择器中的每一种选择器类型的�
 | 选择器                             | 权重  |
 | ---------------------------------- | ----- |
 | 通配符选择器，关系选择器，`:not()` | 00000 |
+| 标签选择器，伪元素                 | 00001 |
 | 类选择器，属性选择器，伪类         | 00010 |
 | ID 选择器                          | 00100 |
 | 内联样式                           | 01000 |
 | `!important`                       | 10000 |
 
-## em, px, vh, vw
+## em, rem, px, vh, vw
+
+
 
 ## 相对单位
 
