@@ -5,7 +5,7 @@ date: 2023-03-30
 
 # CSS
 
-:::details 有关 CSS 的面试题，整理再放送 📢
+:::details 将相关面试题整理再放送，推荐使用`CTRL-F`进行查找 📢
 - https://developer.mozilla.org/zh-CN/docs/Web/CSS
 - https://chodocs.cn/interview/js/css.html
 - https://q.shanyue.tech/fe/css/10.html

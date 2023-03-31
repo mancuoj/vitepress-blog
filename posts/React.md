@@ -5,7 +5,7 @@ date: 2023-03-31
 
 # React
 
-:::details 有关 React 的面试题，整理再放送 📢
+:::details 将相关面试题整理再放送，推荐使用`CTRL-F`进行查找 📢
 - https://react.dev/learn
 - https://react.dev/reference/react
 - https://chodocs.cn/interview/react-summary/
