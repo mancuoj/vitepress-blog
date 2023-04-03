@@ -1,18 +1,7 @@
 ---
-title: HTML
+title: HTML 面试题
 date: 2023-03-29
 ---
-
-# HTML
-
-:::details 将相关面试题整理再放送，推荐使用`CTRL-F`进行查找 📢
-- https://developer.mozilla.org/zh-CN/docs/Web/HTML
-- https://chodocs.cn/interview/js/html.html
-- https://q.shanyue.tech/fe/
-- https://lgwebdream.github.io/FE-Interview/html/
-- https://github.com/yisainan/web-interview
-- https://github.com/pwstrick/daily/blob/master/interview/html.md
-:::
 
 [[toc]]
 
@@ -57,7 +46,7 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
 - 使用语义化的 HTML 代码
 - 优化页面加载速度，响应式设计
 - 确保为您的视觉内容附加文字形式的说明，图片的 alt 属性
-- [构建并提交站点地图](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=zh-cn)
+- [创建并提交站点地图](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=zh-cn)
 - ...
 
 
@@ -72,7 +61,7 @@ SEO 即搜索引擎优化（Search Engine Optimization），它是一种通过�
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="不超过150个字符"/> 
+  <meta name="description" content="description"/> 
   <meta name="keywords" content="blog, mancuoj"/>
   <meta name="author" content="name, email@gmail.com"/>
   <meta name="robots" content="index,follow"/>
@@ -187,3 +176,13 @@ iframe 也称作嵌入式框架，能够将另一个 HTML 页面嵌入到当前�
 - 有时 iframe 由于页面挤占空间的原因会出现滚动条，造成布局混乱
 - iframe 与主页面是共享链接池的，若 iframe 加载时用光了链接池，则会造成主页面加载阻塞
 - 有些小型的移动设备如手机等无法完全显示框架，兼容性较差
+
+
+## 相关链接
+
+- https://developer.mozilla.org/zh-CN/docs/Web/HTML
+- https://chodocs.cn/interview/js/html.html
+- https://q.shanyue.tech/fe/
+- https://lgwebdream.github.io/FE-Interview/html/
+- https://github.com/yisainan/web-interview
+- https://github.com/pwstrick/daily/blob/master/interview/html.md
